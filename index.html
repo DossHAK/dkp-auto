@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ДКП в кармане!</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ДКП в кармане!</h1>
+        <div class="form">
+            <form>
+                <p><label for="date">Дата составления договора</label>
+                    <input type="date" name="date" id="date"></p>
+
+                <p><label for="city">Город</label>
+                    <input type="date" name="city" id="city"></p>
+                <h2>Продавец</h2>
+
+                <p><label for="fio_pro">ФИО</label>
+                    <input type="text" name="fio_pro" id="fio_pro" placeholder="Введите ФИО"></p>
+
+                <p><label for="date_birth_pro">Дата рождения</label>
+                    <input type="date" name="date_birth_pro" id="date_birth_pro"></p>
+
+                <p><label for="pasport_pro">Паспорт</label>
+                    <input type="text" name="pasport_pro" id="pasport_pro_s" placeholder="Серия">
+                    <input type="text" name="pasport_pro" id="pasport_pro_n" placeholder="Номер">
+                    <input type="text" name="pasport_pro" id="pasport_pro_kod" placeholder="Код подразделения">
+                    <input type="date" name="pasport_pro" id="pasport_pro_date">
+                    <p><input type="text" name="pasport_pro" id="pasport_pro_reg" placeholder="Кем выдан"></p></p>
+                    
+
+                <h2>Покупатель</h2>
+
+                <p><label for="fio_po">ФИО</label>
+                    <input type="text" name="fio_po" id="fio_po" placeholder="Введите ФИО"></p>
+
+                <p><label for="date_birth_po">Дата рождения</label>
+                    <input type="date" name="date_birth_po" id="date_birth_po"></p>
+
+                <p><label for="pasport_po">Паспорт</label>
+                    <input type="text" name="pasport_po" id="pasport_po_s" placeholder="Серия">
+                    <input type="text" name="pasport_po" id="pasport_po_n" placeholder="Номер">
+                    <input type="text" name="pasport_po" id="pasport_po_kod" placeholder="Код подразделения">
+                    <input type="date" name="pasport_po" id="pasport_po_date">
+                    <p><input type="text" name="pasport_po" id="pasport_po_reg" placeholder="Кем выдан"></p></p>
+
+                <h2>Транспортное средство</h2>
+
+                <p><label for="model">Марка и модель</label>
+                    <input type="text" name="model" id="model"></p>
+
+                <p><label for="vin">VIN</label>
+                    <input type="text" name="vin" id="vin"></p>
+
+                <p><label for="type">Тип ТС</label>
+                    <input type="text" name="type" id="type"></p>
+
+                <p><label for="year">Год выпуска</label>
+                    <input type="text" name="year" id="year"></p>
+
+
+                <p><label for="engine">Двигатель</label>
+                    <input type="text" name="engine" id="engine_m">
+                    <input type="text" name="engine" id="engine_n"></p>
+
+                <p><label for="frame">Номер шасси, рама</label>
+                    <input type="text" name="frame" id="frame"></p>
+
+                <p><label for="body">Номер кузова</label>
+                    <input type="text" name="body" id="body"></p>
+
+                <p><label for="km">Пробег</label>
+                    <input type="text" name="km" id="km" placeholder="км"></p>
+
+                <p><label for="color">Цвет кузова</label>
+                    <input type="text" name="color" id="color"></p>
+
+                <p><label for="pts">Паспорт ТС (ПТС/ЭПТС)</label>
+                    <input type="text" name="pts" id="pts_s" placeholder="Серия">
+                    <input type="text" name="pts" id="pts_n" placeholder="Номер">
+                    <input type="date" name="pts" id="pts_date">
+                    <p><input type="text" name="pts" id="pts_reg" placeholder="Кем выдан"></p></p>
+
+                <p><label for="sts">Свидетельство о регистрации (СТС)</label>
+                    <input type="text" name="sts" id="sts_s" placeholder="Серия">
+                    <input type="text" name="sts" id="sts_n" placeholder="Номер">
+                    <input type="date" name="sts" id="sts_date">
+                    <p><input type="text" name="sts" id="sts_reg" placeholder="Кем выдан"></p></p>
+    
+                <p><label for="number">Госномер</label>
+                    <input type="text" name="number" id="number" placeholder="А777АА777"></p>
+
+                <p><label for="price">Стоимость ТС</label>
+                    <input type="text" name="price" id="price" placeholder="₽"></p>
+
+
+
+
+                <div class="end">
+                    <div class="send_email">
+                        <p><label for="email">Получить договор на почту</label>
+                            <input type="email" name="email" id="email" placeholder="mail@mail.ru">
+                            <a href="#">Отправить</a></p>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Распечатать договор</button>
+                        <button>Скачать PDF</button>
+                        <button type="reset">Очистить форму</button>
+                    </div>    
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+<script src="js/script.js"></script>
+</body>
+</html>
