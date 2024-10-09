@@ -5,7 +5,7 @@ form.addEventListener('submit', getFormValue);
 function getFormValue(event) {
     event.preventDefault();
     
-    const date = form.querySelector('[id="date"]'),
+    var date = form.querySelector('[id="date"]'),
     city = form.querySelector('[id="city"]'),
     fio_pro = form.querySelector('[id="fio_pro"]'),
     date_birth_pro = form.querySelector('[id="date_birth_pro"]'),
@@ -46,11 +46,57 @@ function getFormValue(event) {
     price = form.querySelector('[id="price"]');
 
 
-    const data = {
+    var data = {
         date: date.value,
         city: city.value,
         fio_pro: fio_pro.value,
-        date_birth_pro: date_birth_pro.value
-}};
+        date_birth_pro: date_birth_pro.value,
+        pasport_pro_s: pasport_pro_s.value,
+        pasport_pro_n: pasport_pro_n.value,
+        pasport_pro_kod: pasport_pro_kod.value,
+        pasport_pro_date: pasport_pro_date.value,
 
-console.log(data);
+        fio_po: fio_po.value,
+        date_birth_po: date_birth_po.value,
+        pasport_po_s: pasport_po_s.value,
+        pasport_po_n: pasport_po_n.value,
+        pasport_po_kod: pasport_po_kod.value,
+        pasport_po_reg: pasport_po_reg.value,
+
+        model: model.value,
+        vin: vin.value,
+        type: type.value,
+        year: year.value,
+        engine_m: engine_m.value,
+        engine_n: engine_n.value,
+        frame: frame.value,
+        body: body.value,
+        km: km.value,
+        color: color.value,
+
+        pts_s: pts_s.value,
+        pts_n: pts_n.value,
+        pts_date: pts_date.value,
+        pts_reg: pts_reg.value,
+
+        sts_s: sts_s.value,
+        sts_n: sts_n.value,
+        sts_date: sts_date.value,
+        sts_reg: sts_reg.value,
+
+        number: number.value,
+        price: price.value
+    };
+
+    // for (let el in data) {
+    //     if (el[key] == undefined) {
+    //         el = 12345;
+    //         console.log(el);
+    //     };
+    //     console.log(el);
+    // };    
+
+    console.log(data);
+};
+
+
