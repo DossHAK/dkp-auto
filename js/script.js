@@ -88,13 +88,9 @@ function getFormValue(event) {
         price: price.value
     };
 
-    // for (let el in data) {
-    //     if (el[key] == undefined) {
-    //         el = 12345;
-    //         console.log(el);
-    //     };
-    //     console.log(el);
-    // };    
+    for (let el in data) {
+        console.log(el);
+    };    
 
     console.log(data);
 };
