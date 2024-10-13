@@ -13,12 +13,14 @@ function getFormValue(event) {
     pasport_pro_n = form.querySelector('[id="pasport_pro_n"]'),
     pasport_pro_kod = form.querySelector('[id="pasport_pro_kod"]'),
     pasport_pro_date = form.querySelector('[id="pasport_pro_date"]'),
+    pasport_pro_reg = form.querySelector('[id="pasport_pro_reg"]'),
     
     fio_po = form.querySelector('[id="fio_po"]'),
     date_birth_po = form.querySelector('[id="date_birth_po"]'),
     pasport_po_s = form.querySelector('[id="pasport_po_s"]'),
     pasport_po_n = form.querySelector('[id="pasport_po_n"]'),
     pasport_po_kod = form.querySelector('[id="pasport_po_kod"]'),
+    pasport_po_date = form.querySelector('[id="pasport_po_date"]'),
     pasport_po_reg = form.querySelector('[id="pasport_po_reg"]'),
     
     model = form.querySelector('[id="model"]'),
@@ -49,18 +51,21 @@ function getFormValue(event) {
     var data = {
         date: date.value,
         city: city.value,
+
         fio_pro: fio_pro.value,
         date_birth_pro: date_birth_pro.value,
         pasport_pro_s: pasport_pro_s.value,
         pasport_pro_n: pasport_pro_n.value,
         pasport_pro_kod: pasport_pro_kod.value,
         pasport_pro_date: pasport_pro_date.value,
+        pasport_pro_reg: pasport_pro_reg.value,
 
         fio_po: fio_po.value,
         date_birth_po: date_birth_po.value,
         pasport_po_s: pasport_po_s.value,
         pasport_po_n: pasport_po_n.value,
         pasport_po_kod: pasport_po_kod.value,
+        pasport_po_date: pasport_po_date.value,
         pasport_po_reg: pasport_po_reg.value,
 
         model: model.value,
